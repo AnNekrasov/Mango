@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">TNG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="telephone_number">Номер телефона</string>
+
+    <string name="country_text" translatable="false">(%1$s)</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="no_internet_connection">Нет соединения с интернетом</string>
+    <string name="repeat_send_available">Отправить повторно через %d секунд</string>
+    <string name="repeat_send_available_social">Отправить код повторно через: %d сек.</string>
+    <string name="recover_code_sms">Восстановите пароль по SMS</string>
+    <string name="accept_code_sms">Введите код-пароль из SMS</string>
+    <string name="accept_code_sms_on_number">Мы выслали ваш постоянный пароль на номер\n</string>
+    <string name="accept_code_sms_register">Присланный код будет являться вашим постоянным паролем</string>
+    <string name="accept_code_sms_social">Введите код из SMS</string>
+    <string name="send_repeat_code">Отправить код повторно</string>
+    <string name="recover_password_code_title">Восстановление пароля</string>
+    <string name="recover_password_phone_title">Восстановить пароль</string>
+    <string name="sign_in_text">Войти</string>
+    <string name="btn_next_text">Продолжить</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="recover_pass_text">Сбросить пароль</string>
+    <string name="enter_phone_number">Введите номер телефона</string>
+    <string name="phone_hint">Номер телефона</string>
+    <string name="btn_cancel_text">Отменить</string>
+    <string name="cancel_publish">Отменить публикацию</string>
+    <string name="buffering_error_clip">Для обработки, сюжет не должен превышать длительности 5 минут</string>
+    <string name="socials_title_text">или</string>
+    <string name="register_info_text">Нажимая кнопку «Продолжить» Вы соглашаетесь с правилами использования сервиса и <u>политикой конфиденциальности</u></string>
+    <string name="no_connection">Отсутствует подключение к интернету</string>
+    <string name="error_sms_wrong">Неверный код СМС!</string>
+    <string name="error_password">Введен неправильный пароль</string>
+    <string name="error_clip_error">Ошибка</string>
+    <string name="error_clip_unavailable">Недоступно</string>
+    <string name="error_clip_deleted">Удалено</string>
+    <string name="error_clip_blocked">Заблокировано</string>
+    <string name="error_clip_check">Проверка</string>
+    <string name="recover_fail">Ошибка при восстановлении!</string>
+    <string name="sms_resent">Sms повторно отправлено!</string>
+    <string name="error_sms_resending">Ошибка при отправке SMS!</string>
+    <string name="error_sms_code">Некорректный код из SMS!</string>
+    <string name="auth_fail">Ошибка при авторизации!</string>
+    <string name="error_server">Произошла ошибка!</string>
+    <string name="error_password_length">Пароль должен быть не менее 4 символов</string>
+    <string name="error_content_not_found">Контент не найден</string>
+    <string name="error_content_deleted">Контент удален</string>
+    <string name="incorrect_phone">Некорректный номер телефона!</string>
+    <string name="reg_fail">Ошибка при регистрации!</string>
+    <string name="auth_fail_password">Неверный пароль</string>
+</resources>

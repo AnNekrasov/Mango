@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_input_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:tag="bg_solid"
+    tools:background="@color/transparent">
+
+
+    <TextView
+        android:id="@+id/tv_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:drawablePadding="14dp"
+        android:gravity="center"
+        android:text="+7"
+        app:layout_constraintBottom_toBottomOf="@id/til_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/til_phone" />
+
+    <View
+        android:id="@+id/country_pick"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/tv_country_code"
+        app:layout_constraintEnd_toEndOf="@id/tv_country_code"
+        app:layout_constraintStart_toStartOf="@id/tv_country_code"
+        app:layout_constraintTop_toTopOf="@id/tv_country_code" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="14dp"
+        android:textColorHint="#80ffffff"
+        app:errorEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_country_code"
+        app:passwordToggleDrawable="@null"
+        app:passwordToggleEnabled="false">
+
+        <EditText
+            android:id="@+id/et_phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="0123456789 -.+()"
+            android:hint="Номер телефона"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textColorHint="#9CB8C1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:tag="text_white"
+        android:text="Продолжить"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_half"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_sms_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="130dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_event_type_selected"
+        android:gravity="center"
+        android:hint="000000"
+        android:inputType="number"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_input"
+        tools:visibility="visible" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="318dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

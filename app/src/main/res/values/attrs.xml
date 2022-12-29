@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyStyleable">
+        <attr name="bottomIconStroke" format="color" />
+        <attr name="bottomIconFill" format="color" />
+        <attr name="bgMain" format="color"/>
+        <attr name="textMain" format="color"/>
+        <attr name="textAlternative" format="color"/>
+        <attr name="textTab" format="color"/>
+        <attr name="textUnselected" format="color"/>
+        <attr name="commonBG" format="color"/>
+        <attr name="recyclerBG" format="color"/>
+        <attr name="toolbarFG" format="color"/>
+        <attr name="border" format="color"/>
+        <attr name="transparent" format="color"/>
+        <attr name="switchBtns" format="color"/>
+        <attr name="transGradient" format="color"/>
+        <attr name="tabMainSelected" format="reference"/>
+        <attr name="tabBg" format="reference"/>
+        <attr name="gradient" format="reference"/>
+        <attr name="button_p" format="reference"/>
+        <attr name="button_np" format="reference"/>
+        <attr name="ic_main_icon_ref" format="reference"/>
+        <attr name="ic_video_icon_ref" format="reference"/>
+        <attr name="ic_add_icon_ref" format="reference"/>
+        <attr name="ic_news_icon_ref" format="reference"/>
+        <attr name="ic_music_icon_ref" format="reference"/>
+    </declare-styleable>
+</resources>
