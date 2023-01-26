@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_registrationFragment_to_profileFragment2"
             app:destination="@id/profileFragment" />
+        <argument
+            android:name="telephone_number"
+            android:defaultValue="Номер телефона" />
     </fragment>
 
 </navigation>

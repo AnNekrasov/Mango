@@ -57,4 +57,6 @@
     <string name="incorrect_phone">Некорректный номер телефона!</string>
     <string name="reg_fail">Ошибка при регистрации!</string>
     <string name="auth_fail_password">Неверный пароль</string>
+    <string name="username">Username</string>
+    <string name="name">Имя пользователя</string>
 </resources>

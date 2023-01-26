@@ -44,5 +44,5 @@ class DataModule {
     }
 
     @Provides
-    fun providesBaseUrl() : String = "https://plannerok.ru/users/"
+    fun providesBaseUrl() : String = "https://plannerok.ru/"
 }

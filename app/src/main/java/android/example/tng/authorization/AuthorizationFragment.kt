@@ -1,5 +1,6 @@
 package android.example.tng.authorization
 
+import android.app.admin.DelegatedAdminReceiver
 import android.example.domain.model.CountryModel
 import android.example.tng.R
 import android.example.tng.databinding.FragmentAutorizationBinding
@@ -49,9 +50,12 @@ class AuthorizationFragment : Fragment() {
                 findNavController().navigate(R.id.profileFragment)
             } else {
                 // safeArgs, pass phoneNumber in params
-                findNavController().navigate(R.id.registrationFragment)
+                val action = AuthorizationFragmentDirections.actionAuthorizationFragmentToRegistrationFragment(vm.phoneNumber)
+                findNavController().navigate(action)
             }
         }
+
+
     }
 
     private fun initPhoneInput() {

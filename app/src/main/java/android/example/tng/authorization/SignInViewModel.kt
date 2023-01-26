@@ -33,7 +33,7 @@ class SignInViewModel @Inject constructor(
 //                c.toString() == ")" || c.toString() == "(" || c.toString() == "-" || c.toString() == " "
 //            }
             viewModelScope.launch {
-                isPhonePostLiveData.value = authUseCase.postPhoneNumber(phoneNumber)
+                isPhonePostLiveData.value = authUseCase.postPhoneNumber(phoneNumber).isSuccess
             }
         } else {
             isPhonePostLiveData.value = false
