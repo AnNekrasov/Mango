@@ -20,7 +20,7 @@ class UserRepositoryImpl(
         return userService.checkSmsCode(CheckSmsCodeRequest(phone = phone, code = code))
             .toDomainObject()
     }
-    //доделать модель регистрации
+    //доделать модель регистрацииx
    override suspend fun postUserRegistration(phone: String?, name : String?,username:String? ) : UserRegistrationDomainModel{
        return userService.postUserRegistration(RegistrationUserRequest(phone = phone, name = name, username = username)).toDomainObject()
    }
