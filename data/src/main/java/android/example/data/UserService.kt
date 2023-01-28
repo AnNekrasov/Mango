@@ -19,4 +19,10 @@ interface UserService {
     suspend fun getUser(
         @Header("Authorization") bearerToken: String,
     ): UserResponse
+
+    @POST("/api/v1/users/register/")
+    suspend fun postUserRegistration(
+        @Body registrationRequest : RegistrationUserRequest
+    ): UserRegistrationResponse
+
 }

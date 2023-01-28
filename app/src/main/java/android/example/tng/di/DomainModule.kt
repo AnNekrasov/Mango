@@ -2,6 +2,7 @@ package android.example.tng.di
 
 import android.example.domain.repository.IUserRepository
 import android.example.domain.usecase.AuthByPhoneUseCase
+import android.example.domain.usecase.RegUserUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,5 +15,11 @@ class DomainModule {
     @Provides
     fun provideGetUserInfoUseCase(userRepository: IUserRepository): AuthByPhoneUseCase {
         return AuthByPhoneUseCase(userRepository)
+    }
+
+    @Provides
+    fun provideRegistrationUserUseCase(userRepository: IUserRepository): RegUserUseCase {
+        return RegUserUseCase(userRepository)
+
     }
 }

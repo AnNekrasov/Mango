@@ -59,4 +59,5 @@
     <string name="auth_fail_password">Неверный пароль</string>
     <string name="username">Username</string>
     <string name="name">Имя пользователя</string>
+    <string name="bt_registration">Регистрация</string>
 </resources>

@@ -1,10 +1,9 @@
 package android.example.data
 
-import android.example.data.model.AuthorizationSuccessResponse
-import android.example.data.model.CheckSmsCodeRequest
-import android.example.data.model.PhoneRequest
+import android.example.data.model.*
 import android.example.domain.model.AuthorisationSuccessDomainModel
 import android.example.domain.model.CheckSmsCodeDomainModel
+import android.example.domain.model.UserRegistrationDomainModel
 import android.example.domain.repository.IUserRepository
 
 class UserRepositoryImpl(
@@ -21,4 +20,8 @@ class UserRepositoryImpl(
         return userService.checkSmsCode(CheckSmsCodeRequest(phone = phone, code = code))
             .toDomainObject()
     }
+    //доделать модель регистрации
+   override suspend fun postUserRegistration(phone: String?, name : String?,username:String? ) : UserRegistrationDomainModel{
+       return userService.postUserRegistration(RegistrationUserRequest(phone = phone, name = name, username = username)).toDomainObject()
+   }
 }
