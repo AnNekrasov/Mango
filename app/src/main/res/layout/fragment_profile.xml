@@ -98,8 +98,4 @@
         android:src="@drawable/ic_baseline_more_edit_profile"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

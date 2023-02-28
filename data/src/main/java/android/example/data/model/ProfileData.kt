@@ -1,8 +1,8 @@
 package android.example.data.model
 
 data class ProfileData(
-    val avatar: String,
-    val avatars: AvatarResponse,
+    val avatar: String?,
+    val avatars: AvatarResponse?,
     val birthday: String,
     val city: String,
     val completed_task: Int,

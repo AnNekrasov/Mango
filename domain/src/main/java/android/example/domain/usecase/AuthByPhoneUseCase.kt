@@ -15,5 +15,4 @@ class AuthByPhoneUseCase (
     suspend fun checkSmsCode(code: String, phone: String): CheckSmsCodeDomainModel{
         return userRepository.checkSmsCode(phone, code)
     }
-
 }

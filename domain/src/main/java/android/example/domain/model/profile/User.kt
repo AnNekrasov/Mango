@@ -4,21 +4,21 @@ import android.example.domain.BaseModel
 import android.example.domain.BaseModelPayload
 
 data class User(
-    val avatar: String,
-    val avatars: Avatar,
-    val birthday: String,
-    val city: String,
+    val avatar: String?,
+    val avatars: Avatar?,
+    val birthday: String?,
+    val city: String?,
     val completedTask: Int,
     val created: String,
     val id: Int,
-    val instagram: String,
-    val last: String,
+    val instagram: String?,
+    val last: String?,
     val name: String,
     val online: Boolean,
     val phone: String,
-    val status: String,
+    val status: String?,
     val username: String,
-    val vk: String
+    val vk: String?
 ): BaseModel {
 //    override fun isIdDiff(other: BaseModel): Boolean {
 //        return other is User

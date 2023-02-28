@@ -8,7 +8,7 @@ data class UserResponse(
 ): IResponse<User>{
     override fun toDomainObject() = User(
         avatar = profile_data.avatar,
-        avatars = profile_data.avatars.toDomainObject(),
+        avatars = profile_data.avatars?.toDomainObject(),
         birthday = profile_data.birthday,
         city = profile_data.city,
         completedTask = profile_data.completed_task,

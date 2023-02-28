@@ -17,7 +17,6 @@ interface UserService {
 
     @GET("api/v1/users/me/")
     suspend fun getUser(
-        @Header("Authorization") bearerToken: String,
     ): UserResponse
 
     @POST("/api/v1/users/register/")

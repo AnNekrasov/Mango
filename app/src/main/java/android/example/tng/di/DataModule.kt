@@ -4,6 +4,7 @@ import android.content.Context
 import android.example.data.UserService
 import android.example.data.UserRepositoryImpl
 import android.example.domain.repository.IUserRepository
+import android.example.tng.utils.AuthInterceptor
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import dagger.Module
 import dagger.Provides
@@ -23,6 +24,7 @@ class DataModule {
     @Singleton
     fun provideOkHttpClient(@ApplicationContext appContext: Context): OkHttpClient = OkHttpClient.Builder()
         .addInterceptor(ChuckerInterceptor(appContext))
+        .addInterceptor(AuthInterceptor(appContext))
         .build()
 
     @Provides

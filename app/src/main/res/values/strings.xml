@@ -60,4 +60,8 @@
     <string name="username">Username</string>
     <string name="name">Имя пользователя</string>
     <string name="bt_registration">Регистрация</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="user_name_profile">Username</string>
+    <string name="about_user">О себе</string>
+
 </resources>

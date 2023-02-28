@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/authorizationFragment">
 
@@ -18,7 +19,30 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="android.example.tng.profile.ProfileFragment"
-        android:label="ProfileFragment" />
+        android:label="ProfileFragment">
+        <argument
+            android:name="refresh_token"
+            android:defaultValue="1"
+            app:argType="string"
+
+            />
+        <argument
+            android:name="access_token"
+            app:argType="string"
+            android:defaultValue="1"
+
+           />
+        <argument
+            android:name="user_id"
+            android:defaultValue="1"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/chatProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment2"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="android.example.tng.registration.RegistrationFragment"
@@ -29,6 +53,23 @@
         <argument
             android:name="telephone_number"
             android:defaultValue="Номер телефона" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatProfileFragment"
+        android:name="android.example.tng.chats.ChatProfileFragment"
+        android:label="fragment_chat_profile"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="android.example.tng.profile.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
     </fragment>
 
 </navigation>

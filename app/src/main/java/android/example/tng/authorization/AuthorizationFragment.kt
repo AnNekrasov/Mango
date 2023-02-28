@@ -48,9 +48,13 @@ class AuthorizationFragment : Fragment() {
         vm.isUserExist.observe(viewLifecycleOwner) { isUserExists ->
             if (isUserExists) {
                 findNavController().navigate(R.id.profileFragment)
-            } else {
+            }
+            else {
                 // safeArgs, pass phoneNumber in params
-                val action = AuthorizationFragmentDirections.actionAuthorizationFragmentToRegistrationFragment(vm.phoneNumber)
+                val action =
+                    AuthorizationFragmentDirections.actionAuthorizationFragmentToRegistrationFragment(
+                        vm.phoneNumber
+                    )
                 findNavController().navigate(action)
             }
         }
