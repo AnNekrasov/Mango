@@ -65,7 +65,7 @@ class RegistrationFragment : Fragment() {
                 binding.etUserName.text.toString()
 
             )
-            //
+
 
             vm.ldRefreshToken.observe(viewLifecycleOwner){
                 sessionManager.saveAuthToken(vm.accessToken.toString())
